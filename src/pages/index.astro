@@ -4,6 +4,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const title = null;
 ---
 <style lang="scss">
+@import '../style/mixins.scss';
+
 .hero {
     width: 100%;
     height: 100vh;
@@ -21,29 +23,20 @@ const title = null;
         object-position: center;
     }
 
-    .heading {
-        span {
-            text-align: center;
-            display: block;
-        }
-
-        .welcome {
-            font-weight: normal;
-            font-size: 1.75rem;
-            margin-top: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .website {
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: normal;
-            font-size: 2.75rem;
-            margin-bottom: 1.5rem;
-        }
+    .welcome {
+        font-size: 1.75rem;
+        margin: 3rem 0 0 0;
     }
 
-    p {
-        font-size: 1.3rem;
+    .heading {
+        @include font-squishyheader();
+        font-size: 2.75rem;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .further {
+        font-size: 1.4rem;
+        margin-top: 0;
     }
 }
 </style>
@@ -56,14 +49,12 @@ const title = null;
         <div class="hero">
             <img class="headshot" src="/assets/juniper.jpg" alt="Juniper">
         
-            <h1 class="heading">
-                <span class="welcome">hi, welcome to</span>{' '}
-                <span class="website">junipers.website</span>
-            </h1>
+            <p class="welcome">Hi, welcome to</p>
+            <h1 class="heading">junipers.website</h1>
 
-            <p>I'm Junie, and this is my website</p>
+            <p class="further">I'm Junie, and this is my website</p>
 
-            <p>There'll be a blog, and some things to learn!</p>
+            <p class="further">There'll be a blog, and some things to learn!</p>
         </div>
     </main>
 </BaseLayout>
