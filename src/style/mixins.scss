@@ -7,3 +7,8 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
 }
+
+@mixin font-maintext-bold {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
