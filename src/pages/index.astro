@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = null;
+const TITLE = null;
+const MERMAID_MIXUP_URL = 'https://etsy.com/shop/mermaidmixup';
 ---
 <style lang="scss">
 @import '../style/mixins.scss';
@@ -10,7 +11,7 @@ const title = null;
     width: 100%;
     height: 100vh;
 
-    background-image: url('/assets/flower-home.jpg');
+    background-image: url('/assets/flowers.jpg');
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,7 +29,29 @@ const title = null;
             
             p {
                 font-size: 1.3rem;
-                margin: 1rem 0 0 0;
+                margin: 1rem 0 0 2rem;
+            }
+        }
+
+        .nav {
+            box-sizing: border-box;
+            padding: 2rem;
+            margin: 0 0 0 1rem;
+
+            ol {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    font-size: 1.2rem;
+                    margin: 0 0 0.75rem 0;
+
+                    a {
+                        color: inherit;
+                        @include font-maintext-bold();
+                    }
+                }
             }
         }
     }
@@ -49,7 +72,7 @@ const title = null;
 }
 </style>
 
-<BaseLayout title={ title }>
+<BaseLayout title={ TITLE }>
     <div class="container">
         <header class="header">
             
@@ -57,8 +80,17 @@ const title = null;
         <main class="main">
             <section class="welcome">
                 <h1>Juniper Preston</h1>
-                <p>software engineer &amp; maker of queer things</p>
+                <p>software engineer &amp; maker of nice things</p>
             </section>
+
+            <nav class="nav">
+                <ol>
+                    <li><a href="/about">about me</a></li>
+                    <li><a href="/cv">cv</a></li>
+                    <li><a href="/blog">blog</a></li>
+                    <li><a href={ MERMAID_MIXUP_URL }>shop on etsy</a></li>
+                </ol>
+            </nav>
         </main>
         <footer class="footer">junipers.website © Juniper Preston {new Date().getFullYear()} • image by <a href="https://unsplash.com/@evieshaffer">Evie S</a></footer>
     </div>
