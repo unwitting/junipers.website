@@ -8,3 +8,7 @@ body {
 
   @include font-maintext();
 }
+
+body {
+  position: relative;
+}

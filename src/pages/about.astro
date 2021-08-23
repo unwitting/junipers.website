@@ -9,10 +9,9 @@ const TITLE = 'About me';
 .container {
     width: 100%;
     min-height: 100vh;
-
-    
-
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
     .header {
         background-color: #1e1e1e;
@@ -44,6 +43,7 @@ const TITLE = 'About me';
     }
 
     .main {
+        flex: 1;
         padding-bottom: 2rem;
 
         background-image: url('/assets/autumn_plants.jpg');
@@ -68,20 +68,20 @@ const TITLE = 'About me';
             }
         }
     }
+}
 
-    .footer {
-        background-color: rgba(255, 255, 255, 0.5);
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 1rem;
-        text-align: right;
+.footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: right;
 
-        a {
-            color: inherit;
-            @include font-maintext-bold();
-        }
+    a {
+        color: inherit;
+        @include font-maintext-bold();
     }
 }
 </style>
@@ -101,11 +101,11 @@ const TITLE = 'About me';
                 <h1>About me</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida arcu ut urna accumsan blandit. Proin facilisis congue turpis id volutpat. Quisque tincidunt ut odio sed dignissim. Aliquam ac sem a risus placerat fringilla. Suspendisse pulvinar erat at neque suscipit, vel ornare risus condimentum. Phasellus tempus ante vel mi sagittis, quis vulputate libero luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc faucibus semper arcu, id porttitor erat cursus sed. Donec congue arcu et ullamcorper tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu leo lacus. Integer commodo non elit ut porta.</p>
                 <p>Etiam vel ex quis quam facilisis accumsan. Aliquam erat volutpat. Vivamus et arcu iaculis eros pellentesque tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In mollis nisl nec magna fringilla facilisis. Proin quis volutpat enim. Praesent et ipsum tellus. Nunc volutpat, ipsum at blandit porttitor, sapien magna pellentesque massa, a porttitor purus ante quis nulla. Integer vitae quam porta, consectetur mauris quis, lacinia ipsum. In sollicitudin ut leo sodales tempus. Nulla tempor, libero ut gravida lacinia, odio nisi finibus ex, nec sodales mi nisi vitae sapien. Sed volutpat condimentum nisi fringilla mollis. Nam et sapien purus.</p>
-                <p>Sed rutrum, diam nec dignissim placerat, diam arcu blandit purus, quis eleifend est justo sed arcu. Nulla id neque ac est malesuada vehicula non sed nulla. Nullam consequat id augue eu gravida. Duis fringilla blandit purus, sed ultrices dolor elementum nec. Nulla malesuada urna non nisi malesuada, a aliquet ipsum mattis. Proin blandit sem rhoncus dolor varius, non malesuada mi sagittis. Pellentesque cursus eu elit vel tincidunt. Vivamus tincidunt lorem tempus blandit blandit. Nulla commodo mi vel nisi cursus consectetur.</p>
+                <!-- <p>Sed rutrum, diam nec dignissim placerat, diam arcu blandit purus, quis eleifend est justo sed arcu. Nulla id neque ac est malesuada vehicula non sed nulla. Nullam consequat id augue eu gravida. Duis fringilla blandit purus, sed ultrices dolor elementum nec. Nulla malesuada urna non nisi malesuada, a aliquet ipsum mattis. Proin blandit sem rhoncus dolor varius, non malesuada mi sagittis. Pellentesque cursus eu elit vel tincidunt. Vivamus tincidunt lorem tempus blandit blandit. Nulla commodo mi vel nisi cursus consectetur.</p>
                 <p>Praesent et velit convallis, vulputate nunc vel, mollis dolor. Cras vulputate, eros sed tincidunt rhoncus, lorem libero vehicula elit, ut posuere libero nunc quis eros. Mauris in augue ante. Aenean consequat posuere dictum. Fusce dui enim, varius eget purus in, sodales ultrices nulla. Proin placerat viverra erat, in dapibus ex malesuada quis. Vivamus ac hendrerit enim. Aliquam commodo mattis lacinia. Etiam egestas consectetur sem suscipit fringilla. Nam congue accumsan ornare.</p>
-                <p>Aenean convallis fermentum ex, pellentesque bibendum erat porttitor sed. Nulla nec est in nisl tempus tempor sed in lacus. Sed vel sem suscipit, dignissim sapien eget, facilisis erat. Phasellus ut bibendum ligula. Duis id malesuada mi. Duis et mauris nec sem efficitur pulvinar. Fusce scelerisque euismod congue. </p>
+                <p>Aenean convallis fermentum ex, pellentesque bibendum erat porttitor sed. Nulla nec est in nisl tempus tempor sed in lacus. Sed vel sem suscipit, dignissim sapien eget, facilisis erat. Phasellus ut bibendum ligula. Duis id malesuada mi. Duis et mauris nec sem efficitur pulvinar. Fusce scelerisque euismod congue. </p> -->
             </section>
         </main>
-        <footer class="footer">junipers.website © Juniper Preston {new Date().getFullYear()} • image by <a href="https://unsplash.com/@evieshaffer">Evie S</a></footer>
     </div>
+    <footer class="footer">junipers.website © Juniper Preston {new Date().getFullYear()} • image by <a href="https://unsplash.com/@evieshaffer">Evie S</a></footer>
 </BaseLayout>
