@@ -50,20 +50,25 @@ const { content: { title, imageURL, imageCreditURL, imageCreditText } } = Astro.
         background-size: 50%;
         background-repeat: no-repeat;
 
-        .about {
+        .content {
             box-sizing: border-box;
             padding: 2rem;
             max-width: 50%;
 
-            h1 {
+            :global(h1) {
                 @include font-maintext;
-                font-size: 3rem;
-                margin: 0;
+                font-size: 2.5rem;
+                margin: 0 0 1.5rem 0;
             }
             
-            p {
-                font-size: 1.3rem;
+            :global(p) {
+                font-size: 1.15rem;
                 margin: 1rem 0 0 2rem;
+            }
+
+            :global(a) {
+                @include font-maintext-bold();
+                color: inherit;
             }
         }
     }
@@ -96,7 +101,7 @@ const { content: { title, imageURL, imageCreditURL, imageCreditText } } = Astro.
             </nav>
         </header>
         <main class="main" style={`background-image: url(${ imageURL })`}>
-            <section class="about">
+            <section class="content">
                 <slot />
             </section>
         </main>
