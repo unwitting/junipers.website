@@ -26,6 +26,16 @@ const TWITTER_CARD_TITLE = `${title ? `${title} | ` : ''}${TWITTER_CARD_TITLE_SU
     <meta name="twitter:title" content={TWITTER_CARD_TITLE}>
     <meta name="twitter:description" content={TWITTER_CARD_DESCRIPTION}>
     <meta name="twitter:image" content={TWITTER_CARD_IMAGE_URL}>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZTV3TXDFM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZTV3TXDFM');
+    </script>
 </head>
 <body>
     <slot />
