@@ -1,16 +1,31 @@
 ---
+const { title } = Astro.props
+const { origin: BASE_URL } = Astro.site
+
+const AUTHOR_TWITTER = 'unwttng'
 const TITLE_SUFFIX = "Juniper Preston's Website"
 
-const { title } = Astro.props
+const TWITTER_CARD_TITLE_SUFFIX = 'junipers.website'
+const TWITTER_CARD_DESCRIPTION = 'The website of Juniper Preston: software engineer and maker'
+const TWITTER_CARD_IMAGE_URL = `${BASE_URL}/assets/twitter_card.jpg`
+
+const PAGE_TITLE = `${title ? `${title} | ` : ''}${TITLE_SUFFIX}`
+const TWITTER_CARD_TITLE = `${title ? `${title} | ` : ''}${TWITTER_CARD_TITLE_SUFFIX}`
 ---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{ title ? `${title} | ` : '' }{ TITLE_SUFFIX }</title>
+    <title>{ PAGE_TITLE }</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/style/global.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content={`@${AUTHOR_TWITTER}`}>
+    <meta name="twitter:title" content={TWITTER_CARD_TITLE}>
+    <meta name="twitter:description" content={TWITTER_CARD_DESCRIPTION}>
+    <meta name="twitter:image" content={TWITTER_CARD_IMAGE_URL}>
 </head>
 <body>
     <slot />
