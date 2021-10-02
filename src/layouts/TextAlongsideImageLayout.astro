@@ -6,6 +6,8 @@ const { content: { title, imageURL, imageCreditURL, imageCreditText } } = Astro.
 <style lang="scss">
 @import '../style/mixins.scss';
 
+$narrow_width_breakpoint: 800px;
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -53,7 +55,13 @@ const { content: { title, imageURL, imageCreditURL, imageCreditText } } = Astro.
         .content {
             box-sizing: border-box;
             padding: 2rem;
-            max-width: 50%;
+
+            @media only screen and (min-width: $narrow_width_breakpoint) {
+                max-width: 50%;
+            }
+            @media only screen and (max-width: ($narrow_width_breakpoint - 1px)) {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
 
             :global(h1) {
                 @include font-maintext;
@@ -63,7 +71,11 @@ const { content: { title, imageURL, imageCreditURL, imageCreditText } } = Astro.
             
             :global(p) {
                 font-size: 1.15rem;
-                margin: 1rem 0 0 2rem;
+                margin: 1rem 0 1rem 2rem;
+
+                @media only screen and (max-width: ($narrow_width_breakpoint - 1px)) {
+                    margin: 1rem 0;
+                }
             }
 
             :global(a) {
