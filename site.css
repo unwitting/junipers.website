@@ -3,6 +3,8 @@
   --content-max-width: 900px;
   --content-padding-side: 2rem;
   --content-padding-top: 2rem;
+  --content-color-bg: rgb(255, 252, 252);
+  --content-color-text-primary: rgb(35, 37, 43);
 }
 
 html,
@@ -10,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 h1,
@@ -30,8 +32,16 @@ p {
 .content {
   width: 100%;
   max-width: var(--content-max-width);
-  margin: 0 auto;
+  min-height: 100vh;
   box-sizing: border-box;
   padding: var(--content-padding-top) var(--content-padding-side);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--content-color-bg);
+  color: var(--content-color-text-primary);
+}
+
+@media (min-width: 901px) {
+  .content {
+    border-right: 1px solid #ccc;
+  }
 }
