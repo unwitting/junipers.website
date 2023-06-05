@@ -1,14 +1,13 @@
 {
-  "name": "@example/starter",
-  "version": "0.0.1",
-  "private": true,
+  "name": "junipers.website",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "start": "astro dev",
-    "build": "astro build"
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Juniper Preston <unwttng@gmail.com>",
   "devDependencies": {
-    "@astrojs/renderer-react": "^0.2.0",
-    "astro": "^0.18.9",
-    "prettier": "^2.3.2"
+    "@11ty/eleventy": "^2.0.1"
   }
 }

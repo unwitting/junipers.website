@@ -1,0 +1,48 @@
+:root {
+  --base-font-size: 18px;
+  --content-max-width: 900px;
+  --content-padding-side: 32px;
+  --content-padding-top: 32px;
+  --content-color-bg: rgb(255, 255, 255);
+  --content-color-text-primary: rgb(35, 37, 43);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-size: var(--base-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.content {
+  width: 100%;
+  max-width: var(--content-max-width);
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: var(--content-padding-top) var(--content-padding-side);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--content-color-bg);
+  color: var(--content-color-text-primary);
+}
+
+@media (min-width: 901px) {
+  .content {
+    border-right: 1px solid #ccc;
+  }
+}
