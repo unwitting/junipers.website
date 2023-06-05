@@ -1,0 +1,37 @@
+:root {
+  --base-font-size: 16px;
+  --content-max-width: 900px;
+  --content-padding-side: 2rem;
+  --content-padding-top: 2rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.content {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: var(--content-padding-top) var(--content-padding-side);
+  font-family: Arial, Helvetica, sans-serif;
+}
