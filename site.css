@@ -1,5 +1,5 @@
 :root {
-  --base-font-size: 16px;
+  --base-font-size: 18px;
   --content-max-width: 900px;
   --content-padding-side: 2rem;
   --content-padding-top: 2rem;
@@ -13,6 +13,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  font-size: var(--base-font-size);
 }
 
 h1,
