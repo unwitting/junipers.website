@@ -26,6 +26,14 @@ p {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
 p {
   line-height: 1.5rem;
 }
@@ -45,4 +53,12 @@ p {
   .content {
     border-right: 1px solid #ccc;
   }
+}
+
+h1.withmeta {
+  margin-bottom: 0;
+}
+p.pagemeta {
+  font-size: 0.9rem;
+  color: #999999;
 }
