@@ -14,3 +14,9 @@ Day-to-day, I'm a software engineer working on [Valla](https://valla.uk/), an on
 Outside of that, I love a great many things and pick up lots of hobbies. I find that often the best way for me to learn is to write down what I find out, so that's largely what I put here: bits of music theory, facts I pick up, how bits of electronics work, anything really.
 
 Have a browse if you like.
+
+## Oneshots
+
+Pages about unrelated topics that I think are interesting (or at least _thought_ were interesting, at some point).
+
+- [The worms of Portobello](/worms-of-portobello/)
