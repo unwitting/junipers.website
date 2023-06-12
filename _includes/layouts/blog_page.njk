@@ -4,6 +4,6 @@ layout: "layouts/site_page.njk"
 
 <h1 class="withmeta">{{ title }}</h1>
 <!-- formattedDate as subheader -->
-<p class="pagemeta">{{ formattedDate }}</p>
+<p class="pagemeta">{% blogDate date %}</p>
 
 {{ content | safe }}

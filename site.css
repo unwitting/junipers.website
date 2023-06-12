@@ -38,6 +38,10 @@ p {
   line-height: 1.5rem;
 }
 
+ul > li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 .content {
   width: 100%;
   max-width: var(--content-max-width);

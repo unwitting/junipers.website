@@ -4,7 +4,6 @@ title: Home
 ---
 
 # Juniper's website
-
 Welcome to my website!
 
 This is a little space I made to gather and share the things that bring me joy, the throwaway thoughts and rabbit-holes of research I end up down. It is likely of no practical use to you whatsoever.
@@ -15,9 +14,12 @@ Outside of that, I love a great many things and pick up lots of hobbies. I find 
 
 Have a browse if you like.
 
-## Oneshots
+## Blog
 
-Pages about unrelated topics that I think are interesting (or at least _thought_ were interesting, at some point).
+One-off posts about things that go on in my life and other bits and bobs I find interesting.
 
-- [The worms of Portobello](/worms-of-portobello/)
-- [On finishing a notebook](/on-finishing-a-notebook/)
+Some recent posts:
+
+{% for post in collections.recentBlogPosts -%}
+- [{{ post.data.title }}]({{ post.url }}) ({% blogDate post.date %})
+{% endfor %}
