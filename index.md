@@ -20,3 +20,4 @@ Have a browse if you like.
 Pages about unrelated topics that I think are interesting (or at least _thought_ were interesting, at some point).
 
 - [The worms of Portobello](/worms-of-portobello/)
+- [On finishing a notebook](/on-finishing-a-notebook/)
