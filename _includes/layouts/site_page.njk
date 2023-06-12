@@ -1,5 +1,6 @@
 ---
 title: 
+breadcrumb: []
 ---
 
 <!doctype html>
@@ -12,6 +13,15 @@ title:
   </head>
   <body>
     <section class="content">
+      <header>
+        {% if breadcrumb %}
+        <ul class="breadcrumb">
+          {% for item in breadcrumb %}
+          <li><a href="{{ item.path }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </header>
       {{ content | safe }}
     </section>
   </body>

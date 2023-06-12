@@ -66,3 +66,23 @@ p.pagemeta {
   font-size: 0.9rem;
   color: #999999;
 }
+
+ul.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--content-padding-top) 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul.breadcrumb li {
+  margin: 0;
+}
+ul.breadcrumb li:not(:last-of-type) {
+  margin: 0 0.5rem 0 0;
+}
+ul.breadcrumb li:not(:last-of-type):after {
+  content: "/";
+  margin-left: 0.5rem;
+}

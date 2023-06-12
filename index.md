@@ -4,6 +4,7 @@ title: Home
 ---
 
 # Juniper's website
+
 Welcome to my website!
 
 This is a little space I made to gather and share the things that bring me joy, the throwaway thoughts and rabbit-holes of research I end up down. It is likely of no practical use to you whatsoever.
@@ -18,7 +19,7 @@ Have a browse if you like.
 
 One-off posts about things that go on in my life and other bits and bobs I find interesting.
 
-Some recent posts:
+[Browse the entire blog archive](/blog/), or jump to some recent posts:
 
 {% for post in collections.recentBlogPosts -%}
 - [{{ post.data.title }}]({{ post.url }}) ({% blogDate post.date %})
