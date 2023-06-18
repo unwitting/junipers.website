@@ -17,10 +17,16 @@ Have a browse if you like.
 
 ## Blog
 
-One-off posts about things that go on in my life and other bits and bobs I find interesting.
+Posts about things that go on in my life and other bits and bobs I find interesting.
 
 [Browse the entire blog archive](/blog/), or jump to some recent posts:
 
 {% for post in collections.recentBlogPosts -%}
 - [{{ post.data.title }}]({{ post.url }}) ({% blogDate post.date %})
 {% endfor %}
+
+## Singles
+
+Standalone pages on specific topics, or persistent logs and archives which I update over time.
+
+[Browse the entire archive here](/singles/).
