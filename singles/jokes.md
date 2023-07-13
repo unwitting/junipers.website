@@ -51,3 +51,23 @@ How do you think they work out how much whales weigh? At the whale weigh station
 ---
 
 How do you fix a broken tuba? With a tuba glue.
+
+## 13th July 2023
+
+Did you hear about that actress who got stabbed? Reece...
+
+_(Witherspoon?)_
+
+No, with a knife
+
+---
+
+Me: Doctor, help me, I was bitten by a wolf!
+
+Doctor: Where??
+
+Me: No, normal.
+
+---
+
+Why didn't the dinosaur go in the lift? It was a stairgosaurus.
