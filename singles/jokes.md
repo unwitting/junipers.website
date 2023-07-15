@@ -62,6 +62,8 @@ No, with a knife
 
 ---
 
+_Immediate credit to my partner, not sure of the original source_
+
 Me: Doctor, help me, I was bitten by a wolf!
 
 Doctor: Where??
