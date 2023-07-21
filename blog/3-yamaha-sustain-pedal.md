@@ -1,6 +1,6 @@
 ---
 title: Issues with Yamaha PSR-EW310 keyboard sustain pedal MIDI
-date: 2023-07-14
+date: 2023-07-22
 ---
 
 This is a very short guide to fixing a very annoying bug with the way that some Yamaha keyboards handle (or rather, don't handle) the MIDI data representing an attached sustain pedal.
@@ -50,7 +50,7 @@ When you reload your keyboard, do the following to apply all those settings agai
 
 ## What did I just do?
 
-You put the keyboard into "duo mode". This is a mode meant for two people to play at the keyboard at the same time, sitting side by side.
+You put the keyboard into "duo mode". This is a mode meant for two people to play at the keyboard at the same time, sitting side by side. For some reason, the keyboard correctly handles sending the pedal data over USB when in duo mode but not in its default mode.
 
 Normally, it splits the keyboard down the middle (around middle C I think). The left is one player's, and the right is the other's. However, the pitch is also changed: the left side is raised by two octaves and the right is lowered by one. This is so that one player doesn't have a very low set of notes available and one only high.
 
