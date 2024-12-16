@@ -4,6 +4,12 @@ date: 2023-06-18
 updated: 2023-06-19
 ---
 
+What did the snowman say to the other snowman?
+
+"Can you smell carrots?"
+
+---
+
 I went into the library and asked the librarian for a book on turtles. "Hard back?" he asked. "Yeah, with little heads."
 
 ---
